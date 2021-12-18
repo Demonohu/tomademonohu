@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+/*THE HOME PAGE*/
+
+.animate{
+
+}
+
+.home{
+    background: url(images/water-hyacinth-blooming-lake-260nw-1288514869.webp), rgba(0,0,0,0.45); 
+    background-blend-mode: darken;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    color: #348C31;
+    font-family: cursive;
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.headerIndex, .aboutIndex, .galleryIndex, .contactIndex{
+    height: 50px;
+    background-color: #CBC3E3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    align-items: center;
+}
+
+.logoIndex{
+    font-family: 'MonteCarlo', cursive;
+    width: max-content;
+}
+
+.navigationIndex li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.navigationIndex a{
+    text-decoration: none;
+    color: #800080;
+}
+
+.navigationIndex a:hover{
+    text-decoration: underline;
+}
+
+.titleIndex{
+    margin-bottom: 2rem;
+    padding: 0;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameIndex, .descrIndex{
+    margin: 0;
+    padding: 0;
+    width: max-content;
+}
+
+.nameIndex{
+    color: #E8B923;
+}
+
+.descrIndex{
+    margin-top: 0.5rem;
+    color: #D4F1F9;
+}
+
+
+/*ABOUT PAGE*/
+
+.about{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #348C31;
+    font-family: cursive;
+    overflow: hidden;
+}
+
+.siteAbout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutPic{
+    flex-basis: 50%;
+    margin: 0;
+}
+
+.infoAbout{
+    flex-basis: 47%;
+    margin: 0 auto;
+}
+
+
+/*GALLERY PAGE*/
+
+.gallery{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #348C31;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    background-color: #7A9598;
+}
+
+.galleryIndex{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.picBox{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 48%;
+    justify-content: space-evenly;
+}
+
+.picGallery{
+    flex-basis: 48%;
+}
+
+.picBox2{
+    margin-top: 1rem;
+}
+
+
+/*CONTACT PAGE*/
+
+.contact{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #348C31;
+    font-family: cursive;
+    background-image: url(./images/water-hyacinth-poisoning.jpg);
+    background-size: 100%;
+    height: auto;
+    background-position: center;
+}
+
+.formHeader{
+    font-family: 'Rancho', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #800080;
+    opacity: 0.8;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 0.7rem auto;
+    background-color: rgba(255, 214, 0, 0.3);
+    height: 2rem;
+    border: 2px solid #348C31;
+    width: 300px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+textarea{
+    margin: auto;
+    background-color: rgba(255, 214, 0, 0.3);
+    border: 2px solid #348C31;
+    width: 300px;
+    border-radius: 6px;
+    font-weight: 500;
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #E8B923;
+}
+
+::placeholder{
+    color: #348C31;
+    opacity: 1;
+}
+
+::-ms-input-placeholder{
+    color: #348C31;
+    opacity: 1;
+}
+
+:-ms-input-placeholder{
+    color: #348C31;
+    opacity: 1;
+}
+
+::-moz-placeholder{
+    color: #348C31;
+    opacity: 1;
+}
+
+:-moz-placeholder{
+    color: #348C31;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder{
+    color: #348C31;
+    opacity: 1;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width : 623px){
+    
+    .gallery{
+        border: 2px solid pink;
+        /* overflow: hidden; */
+    }
+
+    .thePics{
+        border: 2px solid red;
+        height: 100%;
+    }
+}
+/*TO BE CONTINUED, MPM*/
