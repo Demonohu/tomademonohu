@@ -4,6 +4,7 @@
 
 html{
     height: 100%;
+    width: 100%;
 }
 
 .hamburger{
@@ -20,13 +21,13 @@ html{
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    padding: 0;
     margin: 0;
     color: #348C31;
     font-family: cursive;
     object-fit: cover;
     background-size: cover;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .headerIndex, .aboutIndex, .galleryIndex, .contactIndex{
@@ -82,6 +83,7 @@ html{
 
 .nameIndex{
     color: #E8B923;
+    font-size: 2rem;
 }
 
 .descrIndex{
@@ -159,13 +161,13 @@ html{
 
 .contact{
     margin: 0;
-    width: 100%;
+    padding: 0;
+    width: 100%; 
     height: 100%;
     color: #348C31;
     font-family: cursive;
     background-image: url(./images/water-hyacinth-poisoning.jpg);
     background-size: cover;
-    height: auto;
     background-position: center;
 }
 
@@ -206,6 +208,10 @@ textarea{
     width: 300px;
     text-align: left;
     margin: auto;
+}
+
+button{
+    cursor: pointer;
 }
 
 .submit{
@@ -307,6 +313,7 @@ input:focus, textarea:focus{
 }
 
 
+
 @media (max-width : 830px){
 
     /*ABOUT PAGE MODIFICATION*/
@@ -328,4 +335,28 @@ input:focus, textarea:focus{
         padding: 0 1rem;
     }
 
+}
+
+
+@media (max-width: 350px){
+    .nameIndex{
+        font-size: 1.7rem;
+
+    }
+
+    .descrIndex{
+        font-size: 14px;
+    }
+
+    .formHeader{
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+    }
+}
+
+@media (max-width : 320px){
+
+    input, textarea, .button{
+        width: 240px;
+    }
 }
