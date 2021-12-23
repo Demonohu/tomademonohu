@@ -33,13 +33,16 @@
     </section>
 
     <h3 class="formHeader">Do you have any questions, contributions or comments?</h3>
-    <form action="">
-        <input type="text" placeholder="Name">
-        <input type="tel" name="" id="" placeholder="Phone number">
-        <input type="email" name="" id="email" placeholder="email address">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your question, comment or contribution"></textarea>
+    <form autocomplete="on" name="myForm" action="page_submission_URL" method="POST">
+        <label for="name"><input type="text" name="name" placeholder="Name" class="name" required aria-required="true"/></label>
+
+        <label for="tel"><input type="tel" name="phone" placeholder="Phone number" class="phone" required aria-required="true"/></label>
+
+        <label for="email"><input type="email" name="mail" placeholder="email address" class="mail" required aria-required="true"/></label>
+
+        <textarea name="comment" cols="30" rows="10" placeholder="Your question, comment or contribution" class="comment" required aria-required="true"></textarea>
     </form>
-    <div class="button"><button type="submit" class="submit">Submit</button></div>
+    <div class="button"><button type="submit" class="submit" onclick="alert('Your response has been recorded')">Submit</button></div>
     <script src="tomademonohu.js"></script>
 </body>
 

@@ -28,26 +28,6 @@ function closeMenu() {
 }
 
 
-/*HTML Form*/
+/*HTML Form Validation*/
 
-let email = document.querySelectorAll('#email');
-
-
-function emailValidate(email){
-    if (String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    )){
-        alert('Check your email for a confirmatory mail.')
-    }  else{
-        alert("You've entered an incorrect email address.")
-    }
-}
-// const validateEmail = (email) => {
-//     return String(email)
-//       .toLowerCase()
-//       .match(
-//         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//       );
-//   };
+// I tried my best but e no work. I don tire.
